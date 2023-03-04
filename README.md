@@ -24,3 +24,10 @@ cd powermenu
 cd volumecontrol
 ./cvm.sh
 ```
+
+#### Option 3
+- Launcher Scripts
+```
+cd launcherscripts
+./lsr.sh
+```
