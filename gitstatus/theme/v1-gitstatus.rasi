@@ -1,147 +1,120 @@
-/*****----- Configuration -----*****/
 configuration {
     show-icons:                 false;
 }
-
 * {
-    background:     rgba(30, 31, 66, 92%);
+    background:     rgba(30, 31, 66, 100%);
     background-alt: rgba(40, 42, 54, 100%);
     foreground: rgba(84, 57, 109, 100%);
     selected: rgba(84, 57, 109, 100%);
     color-selected: rgba(255, 238, 221, 100%);
-    selected2:     rgba(189, 147, 249, 72%);
     active:         rgba(80, 250, 123, 100%);
     urgent:         rgba(255, 85, 85, 100%);
-    white:      #bbaa99;
-    black:       #3d352a;
 }
-
-/*****----- Main Window -----*****/
 window {
-    /* properties for window widget */
-    transparency:                "real";
-    location:                    east;
-    fullscreen:                  false;
-//    x-offset:                    15px;
-    y-offset:                    0px;
-    background-color:            @background;
-    height:                      100%;
-    width:                       300px;
-    border-radius:               0px 12px 12px 0px;
+    background-color: @background;
+//    border:           1;
+    padding:          5;
+    location:         east;
+//    anchor:           east;
+    width:            300px;
+    height:           100%; 
+    border-radius:    12px 0 0 12px;
+    font:                        "feather bold 13";
 }
-
-/*****----- Main Box -----*****/
 mainbox {
-    enabled:                     true;
-    spacing:                     15px;
-    margin:                      0px;
-    padding:                     15px;
-//   border:                      0px solid;
-//    border-radius:               0px;
-    border-color:                @selected;
-    background-color:            transparent;
-    children:                    [ "listview" ];
+//bordes hasta el menu color general
+    background-color: @background;
+//    border:  0;
+    padding: 22px;
 //    children: [ inputbar, message, listview ];
 }
-
-inputbar {
- margin: 0px 0px 15px;
- //border-radius: 22px;
-}
-
-textbox-prompt-colon {
-
-    padding:                     12px 12px;
-    background-color:            @active;
-
-}
-prompt {
-    enabled:                     true;
-    padding:                     0px 7px 0px;
-    margin:               0px 7px 0px 0px;
-
-    background-color:            @selected; 
-    text-color:                  @white;
-}
-
-/*****----- Message -----*****/
 message {
-    enabled:                     true;
-    margin:                      0px;
-    padding:                     12px;
-    border:                      0px solid;
-//    border-radius:               100%;
-    border-color:                @selected;
-    background-color:            @black;
-    text-color:                  @foreground;
+//    border:       1px dash 0px 0px ;
+    border-color: @separatorcolor;
+    padding:      1px ;
 }
 textbox {
-    background-color:            inherit;
-    text-color:                  @black;
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
-    placeholder-color:           @black;
-    blink:                       true;
-    markup:                      true;
-
+    background-color: @background;
+    text-color: @color-selected;
 }
-error-message {
-    padding:                     12px;
-    border:                      0px solid;
-    border-radius:               0px;
-    border-color:                @selected;
-    background-color:            @background;
-    text-color:                  @foreground;
-}
-
-/*****----- Listview -----*****/
 listview {
-    enabled:                     true;
-    columns:                     1;
-    lines:                       5;
-    cycle:                       true;
-    dynamic:                     true;
-    scrollbar:                   false;
-    layout:                      vertical;
-    reverse:                     false;
-    fixed-height:                true;
-    fixed-columns:               true;
-    
-    spacing:                     15px;
-    margin:                      0px;
-    padding:                     0px;
-    border:                      0px solid;
-    border-radius:               0px;
-    border-color:                @selected;
-    background-color:            transparent;
-    text-color:                  @foreground;
-    cursor:                      "default";
+    background-color: @background;
+//    fixed-height: 0;
+    border:       3px dash 3px 3px ;
+    border-color: rgba(84, 57, 109, 100%);
+    spacing:      2px ;
+//    scrollbar:    true;
+    padding:      2px 0px 0px ;
 }
 
-/*****----- Elements -----*****/
-element {
-    enabled:                     true;
-    spacing:                     0px;
-    margin:                      0px;
-    padding:                     9px 9px;
-    border:                      0px solid;
-//    border-radius:               10px;
-    border-color:                @selected;
-    background-color:            inherit;
-//    background-color:            rgba(100, 68, 118, 0.3); 
-    text-color:                  @color-selected;
-    cursor:                      pointer;
+//mode-switcher {
+//        
+//    border:       2px dash 0px 0px ;
+//    border-color: @separatorcolor;
+//}
+button.selected {
+    background-color: @background;
+    text-color:       @color-selected;
 }
-element-text {
-    font:                        "feather bold 15";
-    background-color:            transparent;
-    text-color:                  inherit;
-    cursor:                      inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
+button selected normal {
+    color: @dark;
+    border: 2px 0px 2px 2px;
+    background-color: @backlight;
+    border-color: @foreground;
+}
+inputbar {
+    background-color: @background;
+//    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    spacing:    0;
+    text-color: @color-selected;
+    padding:    1px ;
+}
+case-indicator {
+    background-color: @background;
+    spacing:    0;
+    text-color: @color-selected;
+}
+entry {
+    background-color: @background;
+    spacing:    0;
+    text-color: @color-selected;
+}
+prompt {
+    background-color: @background;
+    spacing:    0;
+    text-color: @color-selected;
+}
+textbox-prompt-colon {
+    background-color: @background;
+//    expand:     false;
+//    str:        ":";
+//    margin:     0px 0.3em 0em 0em ;
+    text-color: @color-selected;
+}
+
+element {
+    background-color: @background;
+    color: @background;
+    border:  0;
+    padding: 1px ;
 }
 element selected.normal {
-    background-color:            inherit;
-//    text-color:                  var(background);
-//    text-color:                  @color-selected;
+    background-color: @background;
+    color: @background;
+    text-color:       @color-selected;
 }
+element-text {
+    background-color: @background;
+    text-color:      @color-selected;
+//    vertical-align:              0.5;
+//    horizontal-align:            0.5;
+    font:                        "feather 11";
+}
+
+// FUTURE
+//scrollbar {
+//    width:        4px ;
+//   border:       0;
+//    handle-width: 8px ;
+//    padding:      0;
+//}
