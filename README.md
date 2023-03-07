@@ -31,3 +31,10 @@ cd volumecontrol
 cd launcherscripts
 ./lsr.sh
 ```
+
+#### Option 4
+- Git Status
+```
+cd gitstatus
+./gitstatus.sh
+```
