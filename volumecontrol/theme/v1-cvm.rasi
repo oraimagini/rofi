@@ -17,6 +17,9 @@ USE_BUTTONS=YES
 
 // Papaya whip #ffeedd rgba(255, 238, 221, 100%)
     text-Papayawhip: rgba(255, 238, 221, 100%);
+
+    bg-selected:      rgba(84, 57, 109, 100%);
+    icons-selected: rgba(255, 238, 221, 100%);
 }
 
 /*****----- Main Window -----*****/
@@ -164,7 +167,6 @@ element-text {
     horizontal-align:            0.5;
 }
 element selected.normal {
-    background-color:            var(selected);
-//    text-color:                  var(background);
-    text-color:                  @color-selected;
+    background-color:            @bg-selected;
+    text-color:                  @icons-selected;
 }
