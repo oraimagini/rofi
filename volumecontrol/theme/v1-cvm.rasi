@@ -9,14 +9,14 @@ USE_BUTTONS=YES
 
 
 * {
-    background:     rgba(30, 31, 66, 92%);
-    background-alt: rgba(40, 42, 54, 100%);
+// Medium jungle green #1e1f42 rgba(30, 31, 66, 100%)
+    background:     rgba(30, 31, 66, 100%);
+
+// Dark byzantium #54366d rgba(84, 57, 109, 100%)
     foreground: rgba(84, 57, 109, 100%);
-    selected: rgba(84, 57, 109, 100%);
-    color-selected: rgba(255, 238, 221, 100%);
-//    selected:     rgba(189, 147, 249, 72%);
-    active:         rgba(80, 250, 123, 100%);
-    urgent:         rgba(255, 85, 85, 100%);
+
+// Papaya whip #ffeedd rgba(255, 238, 221, 100%)
+    text-Papayawhip: rgba(255, 238, 221, 100%);
 }
 
 /*****----- Main Window -----*****/
