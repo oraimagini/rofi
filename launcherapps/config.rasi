@@ -1,0 +1,8 @@
+configuration {
+  modi: "window,run,drun,ssh,keys,filebrowser,combi,windowcd";
+  combi-modi: "window,drun,ssh";	
+  show-icons:         true;
+  icon-theme:         "Qogir";
+}
+
+@theme "/home/mario/.config/rofi/theme/launcherv6.rasi"
