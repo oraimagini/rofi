@@ -11,4 +11,4 @@ egsc=$(echo "    Config: $gsc");
 options="\n\n$egsa\n\n$egse\n\n$egsc\n\n"
 
 #echo " || Arduino: $gsa || Config: $gsc || Exercises: $gse" | rofi -sep '|' -dmenu -p " *** GIT STATUS *** " -theme ./theme/v1-gitstatus.rasi -i
-selected="$(echo -e "$options" | rofi -show -dmenu -p " *** GIT STATUS *** " -theme ./theme/v1-gitstatus.rasi -i)"
+selected="$(echo -e "$options" | rofi -show -dmenu -p " *** GIT STATUS *** " -theme ./theme/gitstatus.rasi -i)"
