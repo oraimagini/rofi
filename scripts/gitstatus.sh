@@ -15,17 +15,17 @@ path=/home/mario/workspace/
 info() {
    for foo in `ls $path`
    do
-   echo " $foo"
+   echo " $foo :"
    cd $path$foo 
 #   git status
-   gb=` git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' ) `
+   gb=` git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' `
    gs=` git status | sed -n "4p" | sed -E 's/^.*(Changes|clean|Untracked).*$/\1/' `
+   echo " [status] $gb $gs"
    done
 }
 info
-print="\n\n$foo\n\n$gb\n\n$gs\n\n"
-
+print=` info `
+#print="\n\n$foo\n\n$gb\n\n$gs\n\n"
 #echo " || Arduino: $gsa || Config: $gsc || Exercises: $gse" | rofi -sep '|' -dmenu -p " *** GIT STATUS *** " -theme ./theme/v1-gitstatus.rasi -i
 #selected="$(echo -e "$options" | rofi -show -dmenu -p " *** GIT STATUS *** " -theme ./theme/gitstatus.rasi -i)"
-selected="$(echo -e "$print" | rofi -show -dmenu -p " *** GIT STATUS *** " -theme ./theme/gitstatus.rasi -i)"
-
+echo "$print" | rofi -show -dmenu -p " *** GIT STATUS *** " -theme ./theme/gitstatus.rasi -i

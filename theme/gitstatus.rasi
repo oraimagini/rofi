@@ -30,7 +30,7 @@ mainbox {
 }
 message {
 //    border:       1px dash 0px 0px ;
-    border-color: @separatorcolor;
+//    border-color: @separatorcolor;
     padding:      1px ;
 }
 textbox {
@@ -57,9 +57,9 @@ button.selected {
     text-color:       @color-selected;
 }
 button selected normal {
-    color: @dark;
+//    color: @dark;
     border: 2px 0px 2px 2px;
-    background-color: @backlight;
+//    background-color: @backlight;
     border-color: @foreground;
 }
 inputbar {
