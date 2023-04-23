@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rofi -show drun -theme ./theme/style/apps.rasi
+rofi -show drun -theme ./theme/style01/apps.rasi
