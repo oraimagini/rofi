@@ -9,7 +9,7 @@ mute=$(echo 🗙 );
 fuerte=$(echo 🎝 );
 options="$alta\n$media\n$baja\n$mute\n$fuerte"
 
-selected="$(echo -e "$options" | rofi -show -dmenu -theme ./theme/cvm.rasi)"
+selected="$(echo -e "$options" | rofi -show -dmenu -theme ./theme/style01/cvm.rasi)"
 
 case $selected in
     "${alta}")
