@@ -9,32 +9,31 @@ sudo apt install rofi
 ```
 git clone git@github.com:oraimagini/rofi.git
 cd rofi
+cp -r * ~/.config/rofi/  
 ```
+
+#### or (testing)
 
 #### Option 1
 - Powermenu
 ```
-cd powermenu
-./pwm.sh
+./scripts/pwm.sh
 ```
 
 #### Option 2
 - Control de volumen
 ```
-cd volumecontrol
-./cvm.sh
+./scripts/cvm.sh
 ```
 
 #### Option 3
 - Launcher Scripts
 ```
-cd launcherscripts
-./lsr.sh
+./scripts/lsr.sh
 ```
 
 #### Option 4
 - Git Status
 ```
-cd gitstatus
-./gitstatus.sh
+./scripts/gitstatus.sh
 ```
