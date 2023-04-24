@@ -9,7 +9,7 @@ logout=$(echo ❮);
 lock=$(echo ✖);
 options="$poweroff\n$reboot\n$sleep\n$logout\n$lock"
 
-selected="$(echo -e "$options" | rofi -show -dmenu -theme ./theme/style01/pwm.rasi )"
+selected="$(echo -e "$options" | rofi -show -dmenu -theme ~/.config/rofi/theme/style01/pwm.rasi )"
 
 case $selected in
     "${poweroff}")
