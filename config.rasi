@@ -5,4 +5,4 @@ configuration {
   icon-theme:         "Qogir";
 }
 
-@theme "/home/mario/.config/rofi/theme/launcherv6.rasi"
+@theme "/home/mario/.config/rofi/theme/style01/apps.rasi"
