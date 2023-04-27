@@ -1,33 +1,22 @@
 * {
   font: "Montserrat 9";
 
-// text box dark
-//  bg0    : #1f1f1f80;
 // text box light
   bg0    : #ffffff80;
 
 // light
   bg1    : #f9f9f9bf;
-// dark  
-//  bg1    : #202020bf;
  
-// entry dark
-//  bg2    : #2c2c2c;
 // entry light
   bg2    : #f7f7f7;
 
-// selected dark  
-//  bg3    : #393939bf;
 // selected light
   bg3    : #fefefebf;
   
-// text dark  
-//  fg0    : #ffffff;
 // text light
   fg0    : #1a1a1a;
   fg1    : #5f5f5f;
-//  fg1    : #cecece;
-  accent : #60cdff;
+  accent : #005fb8;
   urgent : @accent;
 
   background-color : transparent;
@@ -36,6 +25,15 @@
   margin  : 0;
   padding : 0;
   spacing : 0;
+
+// backup dark
+//  bg0    : #1f1f1f80;
+//  bg1    : #202020bf;
+//  bg2    : #2c2c2c;
+//  bg3    : #393939bf;
+//  fg0    : #ffffff;
+//  fg1    : #cecece;
+//  accent : #60cdff;
 }
 
 element-icon, element-text, scrollbar {
@@ -78,7 +76,7 @@ icon-search {
 }
 
 entry {
-  font              : "Montserrat 12";
+  font              : "Montserrat 11";
   placeholder       : "Type here to search";
   placeholder-color : @fg1;
 }
