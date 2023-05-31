@@ -25,15 +25,6 @@
   margin  : 0;
   padding : 0;
   spacing : 0;
-
-// backup dark
-//  bg0    : #1f1f1f80;
-//  bg1    : #202020bf;
-//  bg2    : #2c2c2c;
-//  bg3    : #393939bf;
-//  fg0    : #ffffff;
-//  fg1    : #cecece;
-//  accent : #60cdff;
 }
 
 element-icon, element-text, scrollbar {
