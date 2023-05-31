@@ -1,49 +1,32 @@
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Rofi Theme File
- * Rofi Version: 1.7.3
- **/
-
 /*****----- Configuration -----*****/
 configuration {
     show-icons:                 false;
 }
-
-/*****----- Global Properties -----*****/
-//@import                          "../shared/colors.rasi"
-//@import                          "../shared/fonts.rasi"
 
 /*
 USE_ICON=YES
 */
 
 * {
-//    background:     #1E1F29FF;
-    background:     #241F31;
-    background-alt: #45385D;
-//    background-alt: #433c56;
-    foreground:     #FFFFFFFF;
-    selected:        #726092;
-    active:         #50FA7BFF;
-    urgent:         #FF5555FF;
+    background:     rgba(36, 31, 49, 98%);
+    background-alt: rgba(69, 56, 93, 100%);
+    foreground:     rgba(255, 255, 255, 100%);
+    selected:       rgba(114, 96, 146, 100%);
+    text-selected:  rgba(239, 239, 234, 100%);    
+    active:         rgba(250, 123, 255, 100%);
+    urgent:         rgba(85,85,255, 100%);
 }
-
-
 
 /*****----- Main Window -----*****/
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    west;
-    //anchor:                      center;
+    location:                    north;
     fullscreen:                  false;
-    width:                       115px;
-    x-offset:                    15px;
-    y-offset:                    0px;
-
+    height:                      55px;    
+    width:                       273px;
+    x-offset:                    0px;
+    y-offset:                    9px;
     /* properties for all widgets */
     enabled:                     true;
     margin:                      0px;
@@ -135,12 +118,8 @@ error-message {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     1;
-    lines:                       5;
-    cycle:                       true;
-    dynamic:                     true;
     scrollbar:                   false;
-    layout:                      vertical;
+    layout:                      horizontal;
     reverse:                     false;
     fixed-height:                true;
     fixed-columns:               true;
@@ -161,16 +140,16 @@ element {
     enabled:                     true;
     spacing:                     0px;
     margin:                      0px;
-    padding:                     20px 0px;
+    padding:                     0px 11px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               3px;
     border-color:                @selected;
-    background-color:            @background-alt;
-    text-color:                  var(background);
+    background-color:            rgba(0, 0, 0, 9%);
+    text-color:                  var(selected);
     cursor:                      pointer;
 }
 element-text {
-    font:                        "feather bold 24";
+    font:                        "feather bold 13";
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;
@@ -178,7 +157,7 @@ element-text {
     horizontal-align:            0.5;
 }
 element selected.normal {
-    background-color:            var(selected);
-    text-color:                  @foreground;
+    background-color:            rgba(100, 100, 100, 13%);
+    text-color:                  @text-selected;
 }
 
